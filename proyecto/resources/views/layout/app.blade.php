@@ -19,7 +19,8 @@
     <body>
         <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Vygotsky</a>
+                <!--<a class="navbar-brand" href="#">Vygotsky</a>-->
+                <img class="navbar-brand logo"  src="logo.jpg" href="#" alt="">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,8 +42,8 @@
                 </div>
             </div>
         </nav>
-        <div class="espacio"></div>
-        <main role="main" class="container">
+        <!--<div class="espacio"></div>-->
+        <main role="main" class="container col home">
 
             @yield("contenido")
 

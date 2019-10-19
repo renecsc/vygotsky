@@ -1,5 +1,3 @@
-<!--Se crea el menu de navegación superior estático -->
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,49 +17,6 @@
     <body>
         <!-- Cabecera -->
         <header id="header" >  
-            <!-- Cabecera de arriba(top-header) -->
-            <!--
-            <div class="top-deader bg-white">
-                <div class="container">
-                    
-                    <div class="row">
-                        
-                        <div class="col-sm-6">
-                            <ul class="list-inline pull-left">
-                                <li><a target="_blank" href="https://es-es.facebook.com/colegio.vygotsky/" class="icon-holder small rounded" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/" class="icon-holder small rounded" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                <li><a target="_blank" href="https://twitter.com/" class="icon-holder small rounded" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a target="_blank" href="https://cl.linkedin.com/" class="icon-holder small rounded" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a target="_blank" href="https://www.youtube.com/" class="icon-holder small rounded" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul class="list-inline pull-right">
-                                <li>
-                                    <a id="decreaseFont" href="" class="icon-holder small rounded" title="Disminuir Fuente">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-minus fa-inverse" style="font-size: 7px;margin-right: -4px;"></i>
-                                            <i class="fa fa-font"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li><a id="resetFont" href="" class="icon-holder small rounded" title="Resetear Tamaño"><span class="fa-stack"><i class="fa fa-font"></i></span></a></li>
-                                <li>
-                                    <a id="increaseFont" href="" class="icon-holder small rounded" title="Agrandar Fuente">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-font"></i>
-                                            <i class="fa fa-plus fa-inverse" style="font-size: 7px;margin-left: -4px;"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li><a id="high-contrast-toogle" href="" class="icon-holder small rounded" title="Modo de Alto Contraste"><span class="fa-stack"><i class="fa fa-adjust"></i></span></a></li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                -->
                 <!-- Barra de navegacion -->  
                 <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
                     <div class="container">                        
@@ -97,9 +52,6 @@
             @yield("contenido")
 
         </main>
-        <!-- Footer -->
-
-
         <!-- Footer -->
         <footer class="page-footer font-small pt-4">
 
@@ -141,8 +93,8 @@
                 <hr class="w-100 clearfix d-md-none">
         
                 <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Enlaces</h6>
                 <p>
                     <a href="#!">Your Account</a>
                 </p>
@@ -153,7 +105,7 @@
                     <a href="#!">Shipping Rates</a>
                 </p>
                 <p>
-                    <a href="#!">Help</a>
+                    <a href="#!">Ayuda</a>
                 </p>
                 </div>
         
@@ -161,14 +113,15 @@
                 <hr class="w-100 clearfix d-md-none">
         
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
-                <p>
-                    <i class=" fa fa-home mr-3"></i>Camino a Zapallar Km. 0.65, Curicó</p>
-                <p>
-                    <i class="fa fa-envelope mr-3"></i> contacto@vygotsky.cl</p>
-                <p>
-                    <i class="fa fa-phone mr-3"></i> (75)-2322216 - 2336765 - (9)84759648</p>
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                    <p>
+                        <i class=" fa fa-home mr-3"></i>Camino a Zapallar Km. 0.65, Curicó</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> contacto@vygotsky.cl</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> (75)-2322216 - 2336765 - (9)84759648
+                    </p>
                 </div>
                 <!-- Grid column -->
         
@@ -200,13 +153,13 @@
                 <div class="text-center text-md-right">
                     <ul class="list-unstyled list-inline">
                     <li class="list-inline-item">
-                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/colegio.vygotsky">
                         <i class="fab fa fa-facebook"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                        <i class="fab fa fa-twitter"></i>
+                        <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com/colegiovygotsky">
+                            <i class="fab fa fa-twitter"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">

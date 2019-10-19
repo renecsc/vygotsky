@@ -1,6 +1,6 @@
 .espacio {
 	width: 100%;
-    margin-top: 75px;
+    margin-top: 50px;
 }
 .logo{
 	width: 30px;
@@ -49,4 +49,24 @@
   .fa-linkedin{
 	background: #0E76A8;
 	color: white;
+  }
+
+  .fondo-blur{
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .fondo-blur::before{
+	content: '';
+	display: block;
+	background: inherit;
+	position: absolute;
+	width: 100%; height: 100%;
+	left: 0; top: 0;
+	filter: blur(15px);
+	transform: scale(1.2,1.4);
+  }
+
+  .eventos{
+	  background #ffda40;
   }

@@ -11,6 +11,8 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return redirect('/home');
 });
@@ -18,4 +20,11 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
-    
+
+Route::get('/inicio', function(){
+    return view('inicio');
+});
+
+Route::get('/proyecto', function(){
+    return view('proyecto');
+});

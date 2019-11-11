@@ -13,76 +13,33 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link rel="shortcut icon" href="logo.png"/>
     </head>
 
     <body>
         <!-- Cabecera -->
         <header id="header" >  
-            <!-- Cabecera de arriba(top-header) -->
-            <!--
-            <div class="top-deader bg-white">
-                <div class="container">
-                    
-                    <div class="row">
-                        
-                        <div class="col-sm-6">
-                            <ul class="list-inline pull-left">
-                                <li><a target="_blank" href="https://es-es.facebook.com/colegio.vygotsky/" class="icon-holder small rounded" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/" class="icon-holder small rounded" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                <li><a target="_blank" href="https://twitter.com/" class="icon-holder small rounded" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a target="_blank" href="https://cl.linkedin.com/" class="icon-holder small rounded" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a target="_blank" href="https://www.youtube.com/" class="icon-holder small rounded" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul class="list-inline pull-right">
-                                <li>
-                                    <a id="decreaseFont" href="" class="icon-holder small rounded" title="Disminuir Fuente">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-minus fa-inverse" style="font-size: 7px;margin-right: -4px;"></i>
-                                            <i class="fa fa-font"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li><a id="resetFont" href="" class="icon-holder small rounded" title="Resetear Tamaño"><span class="fa-stack"><i class="fa fa-font"></i></span></a></li>
-                                <li>
-                                    <a id="increaseFont" href="" class="icon-holder small rounded" title="Agrandar Fuente">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-font"></i>
-                                            <i class="fa fa-plus fa-inverse" style="font-size: 7px;margin-left: -4px;"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li><a id="high-contrast-toogle" href="" class="icon-holder small rounded" title="Modo de Alto Contraste"><span class="fa-stack"><i class="fa fa-adjust"></i></span></a></li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                -->
-                <!-- Barra de navegacion -->  
+             
                 <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
-                    <div class="container">                        
-                        <img class="navbar-brand logo"  src="logo.png" href="/home" alt="">
-                        <a class="navbar-brand" href="/home">Colegio Vygotsky</a>
+                    <div id="cabecera" class="container">                        
+                        <img class="navbar-brand logo"   src="logo.png" href="/home" alt="">
+                        <a class="navbar-brand" href="/home"><p class="titulo">Colegio Vygotsky</p></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div id="navbar" class="collapse navbar-collapse">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Noticias</a>
+                            <ul class="navbar-nav ">
+                                <li class="nav-item active titulos">
+                                    <a class="nav-link" href="/inicio">Noticias</a>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Proyecto Educativo</a>
+                                <li class="nav-item active titulos">
+                                    <a class="nav-link" href="/proyecto">Proyecto Educativo</a>
                                 </li>
-                                <li class="nav-item active">
+                                <li class="nav-item active titulos">
                                     <a class="nav-link" href="#">Admisión</a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Documentos Institucionales</a>
+                                    <a class="nav-link titulos" href="#">Documentos Institucionales</a>
                                 </li>
                             </ul>
                         </div>
@@ -92,10 +49,9 @@
             </div>
         </header>
         <!--<div class="espacio"></div>-->
-        <main role="main" class="container col home">
-
-            @yield("contenido")
-
+        <main role="main" class="container col home" >
+           @yield("contenido")
+           
         </main>
         <!-- Footer -->
 

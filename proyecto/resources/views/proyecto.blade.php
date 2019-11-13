@@ -29,6 +29,7 @@
 
 <div class="texto">
     <div class="titulo"><h2>Proyecto Educativo</h2></div>
+    </br>
     <div class="contenido" >
         <p>
             La Fundación Educacional Vygotsky, es una institución sin fines de LUCRO, se crea producto de la ley de Inclusión escolar N°20.845, viene a dar continuidad al Colegio Vygotsky, fundado un 24 de agosto del año 2000.
@@ -62,5 +63,30 @@
         </p>
         </div>
 </div>
+
+<a href="javascript:openit()">#Abrir</a>
+
+<div id="anuncio" style="right:40%; top:40%; position: fixed;"> 
+<div align="center" style="margin-bottom:-30px;"> 
+<a href="javascript:closeit()"><font face="Courier" size="1">#CERRAR</font></a> 
+</div> 
+<br /> 
+<img border="0" src="logo.png" alt="" />  
+</div> 
+
+<div class="clear"> 
+</div>
+<script type="text/javascript"> 
+//<![CDATA[ 
+
+anuncio = document.getElementById("anuncio");
+function closeit(){ 
+anuncio.style.visibility = "hidden"; 
+} 
+function openit(){
+    anuncio.style.visibility = "visible";
+}
+//]]> 
+</script>
 
 </body>

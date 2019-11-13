@@ -6,12 +6,23 @@
 	width: 80px;
 	height: 85px;
 }
+body{
+	background-color:#b1040e;
+	font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 a{
 	font-family: -apple-system;
 
 }
 .w-100{
 	max-height: 550px;
+}
+#noticias{
+	background-color:#f9f6ef;
+}
+a:hover{
+	opacity: 0.5;
 }
 .home{
 	margin:0;
@@ -20,6 +31,11 @@ a{
 }
 .texto{
 	text-align: center;
+	background-color:lightgray;
+	margin-left: 10%;
+	width: 70%;
+	padding: 5%;
+	border-radius: 7%;
 }
 .titulos{
 	font-weight: bold;
@@ -32,8 +48,7 @@ a{
 	font-family: 'Times New Roman', Times, serif;
 	font-size:  16pt;
 	text-align: justify;
-	padding-left: 10%;
-	padding-right: 20%;
+	margin-left: 20px;
 
 }
 
@@ -53,6 +68,7 @@ a{
 	width: 50px;
 	text-align: center;
 	text-decoration: none;
+	border-radius: 100%;
   }
   
   /* Add a hover effect if you want */
@@ -60,21 +76,39 @@ a{
 	opacity: 0.7;
   }
   
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
   .fa-facebook {
 	background: #3B5998;
 	color: white;
   }
-  
-  /* Twitter */
   .fa-twitter {
 	background: #55ACEE;
 	color: white;
   } 
-  /* Twwiter */
   .fa-linkedin{
 	background: #0E76A8;
 	color: white;
+
   }
+  #administrativo{
+	  border-radius: 50%;
+	  
+  }
+  #noticias{
+	  margin-left: 10%;
+	  margin-right: 10%;
+	  margin-top: 40px;
+  }
+
+
+  #anuncio {
+	  background-color: #00000045;
+	  border-radius: 10%;
+	  width:500px;
+	  height: 380px;
+  }
+  #anuncio_familia{
+	background-color: #00000045;
+	border-radius: 10%;
+	width:500px;
+	height: 380px;
+}

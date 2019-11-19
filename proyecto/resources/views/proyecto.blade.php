@@ -15,6 +15,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="logo.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -26,8 +27,8 @@
   </a>
 </nav>
 
-
-<div class="texto">
+<button id="proyecto_e">Proyecto Educativo</button>
+<div id="presentacion" class="texto">
     <div class="titulo"><h2>Proyecto Educativo</h2></div>
     </br>
     <div class="contenido" >
@@ -62,31 +63,21 @@
         Estos antecedentes son de suma importancia porque grafican una composición de familias y aspiraciones con una mixtura y compromiso social.        
         </p>
         </div>
+        <div id="institucion">
+            <div class="titulo"> <h2>Institucion Sostenedora</h2></>
+            <div class="contenido">
+            
+            </div>
+        </div>
 </div>
 
-<a href="javascript:openit()">#Abrir</a>
-
-<div id="anuncio" style="right:40%; top:40%; position: fixed;"> 
-<div align="center" style="margin-bottom:-30px;"> 
-<a href="javascript:closeit()"><font face="Courier" size="1">#CERRAR</font></a> 
-</div> 
-<br /> 
-<img border="0" src="logo.png" alt="" />  
-</div> 
-
-<div class="clear"> 
-</div>
 <script type="text/javascript"> 
-//<![CDATA[ 
-
-anuncio = document.getElementById("anuncio");
-function closeit(){ 
-anuncio.style.visibility = "hidden"; 
-} 
-function openit(){
-    anuncio.style.visibility = "visible";
-}
-//]]> 
+$(document).ready(function(){
+    $("#presentacion").hide();
+    $("#proyecto_e").click(function(){
+        $("#presentacion").show();
+    });
+});
 </script>
 
 </body>

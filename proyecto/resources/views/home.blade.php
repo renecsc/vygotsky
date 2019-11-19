@@ -65,11 +65,16 @@
             <img id="administrativo" src="/images/director.jpg" alt="Avatar" width="200px" height="200px">
 </div>
 </div>
-    <h5>¿Cómo conversamos en tiempos de Whatsapps y Selfies ?</h5>
+<div id="intro"/>
+    <h5><b>¿Cómo conversamos en tiempos de Whatsapps y Selfies ?</b></h5>
     <div class="contenido">
 <p>
 Querida comunidad escolar, durante el primer año de mi Post-grado en la universidad de  Talca el año 2003, presenté un trabajo que causó mucho debate, polémica y por qué no decirlo burlas entre los compañeros del magister. El trabajo se titulaba, “La acción comunicativa del Chat, una comunicación sin rostro”.  En ese trabajo mi idea central era la necesidad de plantear que una comunicación efectiva y real entre dos o más personas,  requiere del contacto visual y la verdadera identidad, eran claves para mantener el contenido del mensaje, como también la intención y las emociones involucradas en ello.  Quiero dejar muy en claro que bajo ningún motivo, mi idea era criticar o atacar el desarrollo y la utilización de la tecnología, sino más bien, declarar la intención de lucha por aquellos elementos que aportan un valor a la acción comunicativa que en ocasiones se pierde o distorsiona.
-</p><p>
+</p>
+</div>
+<div id="palabraDirector" class="contenido" >
+<p>
+
 Hoy, después de 15 años enfrentamos un desarrollo tecnológico descomunal y eso es un gran aporte a muchas áreas de la existencia humana, pero mantengo mis dudas sobre la efectividad de los mensajes, el contenido de estos y la transformación humana detrás de la tecnología.  
 </p><p>
 Queridas familias de nuestra comunidad escolar, hoy y mañana tenemos un gran desafío, ¿Cómo conversamos en tiempos de Whatsapps y Selfies?, ¿Cómo usamos y NO abusamos de la tecnología de las comunicaciones?, ¿Cómo recuperamos la empatía, sensibilidad y  evitamos la comunicación sin rosto?
@@ -90,7 +95,29 @@ Magister en Política y Gestión Educacional
 </p>
 </p>
 </div>
+<summary id="verMas"><a>ver más</a></summary>
+<summary id="verMeno"><a>ver menos</a></summary>
+</div>
 </div>
 
 </div> 
+<script>
+$(document).ready(function(){
+    $("#palabraDirector").hide();
+    $("#verMeno").hide();
+    $("#verMas").click(function(){
+        $("#palabraDirector").show();
+        $("#verMas").hide();
+        $("#verMeno").show();
+    });
+    
+    
+    $("#verMeno").click(function(){
+        $("#palabraDirector").hide();
+        $("#verMeno").hide();
+        $("#verMas").show();
+    });
+});
+</script>
+
 @stop

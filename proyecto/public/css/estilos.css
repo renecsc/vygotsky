@@ -10,11 +10,11 @@ body{
 	background-color:#b1040e;
 	font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
-
-a{
-	font-family: -apple-system;
-
+footer{
+	color:white;
 }
+
+
 .w-100{
 	max-height: 550px;
 }
@@ -46,10 +46,13 @@ a:hover{
 }
 .contenido{
 	font-family: 'Times New Roman', Times, serif;
-	font-size:  16pt;
+	font-size:  14pt;
 	text-align: justify;
 	margin-left: 20px;
 
+}
+#intro{
+	background: -prefix-linear-gradient(top,blue,white);
 }
 
 .altura-100{
@@ -94,10 +97,10 @@ a:hover{
 	  
   }
   #noticias{
-	  margin-left: 10%;
-	  margin-right: 10%;
-	  margin-top: 40px;
-  }
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 40px;
+}
 
 
   #anuncio {

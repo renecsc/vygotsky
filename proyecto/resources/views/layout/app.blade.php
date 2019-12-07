@@ -15,6 +15,32 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="logo.png"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $(function(){
+        $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+            && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+                if ($target.length) {
+
+                    var targetOffset = $target.offset().top;
+
+                    $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                    return false;
+
+            }
+
+        }
+
+        });
+
+        });
+        
+        </script>
     </head>
 
     <body>
@@ -33,13 +59,13 @@
                         <div id="navbar" class="collapse navbar-collapse">
                             <ul class="navbar-nav ">
                                 <li class="nav-item active titulos">
-                                    <a class="nav-link" href="/inicio">Noticias</a>
+                                    <a class="nav-link" href="#noticias">Noticias</a>
                                 </li>
                                 <li class="nav-item active titulos">
                                     <a class="nav-link" href="/proyecto">Proyecto Educativo</a>
                                 </li>
                                 <li class="nav-item active titulos">
-                                    <a class="nav-link" href="#">Admisión</a>
+                                    <a class="nav-link" href="#admision">Admisión</a>
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link titulos" href="#">Documentos Institucionales</a>
@@ -53,13 +79,15 @@
         </header>
         <!--<div class="espacio"></div>-->
         <main role="main" class="container col home" >
+            
+
            @yield("contenido")
             @yield("media")   
         </main>
         <!-- Footer -->
 
 
-        <footer class="page-footer font-small pt-4">
+        <footer id="admision" class="page-footer font-small pt-4">
 
             <!-- Footer Links -->
             <div class="container text-center text-md-left">
@@ -69,10 +97,8 @@
         
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
-                <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                    consectetur
-                    adipisicing elit.</p>
+                <h6 class="text-uppercase mb-4 font-weight-bold"></h6>
+                <p></p>
                 </div>
                 <!-- Grid column -->
         
@@ -119,6 +145,8 @@
                             <div class="clear"> 
                     </div>
                     <script type="text/javascript"> 
+
+
                         //<![CDATA[ 
 
                         anuncio = document.getElementById("anuncio");

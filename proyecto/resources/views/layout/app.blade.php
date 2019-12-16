@@ -17,28 +17,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <script type="text/javascript">
-            $(function(){
-        $('a[href*=#]').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-            && location.hostname == this.hostname) {
-                var $target = $(this.hash);
-                $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
-                if ($target.length) {
-
-                    var targetOffset = $target.offset().top;
-
-                    $('html,body').animate({scrollTop: targetOffset}, 1000);
-
-                    return false;
-
+            function addMargen(){
+                window.scrollTo(0, window.pageYOffset - 100);
             }
 
-        }
-
-        });
-
-        });
+            window.addEventListener('hashchange', addMargen);
         
         </script>
     </head>

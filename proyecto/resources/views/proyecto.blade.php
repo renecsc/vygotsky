@@ -28,6 +28,7 @@
 </nav>
 
 <button id="proyecto_e">Proyecto Educativo</button>
+<button id="sostenedora_e">Institucion Sostenedora</button>
 <div id="presentacion" class="texto">
     <div class="titulo"><h2>Proyecto Educativo</h2></div>
     </br>
@@ -63,19 +64,75 @@
         Estos antecedentes son de suma importancia porque grafican una composición de familias y aspiraciones con una mixtura y compromiso social.        
         </p>
         </div>
-        <div id="institucion">
-            <div class="titulo"> <h2>Institucion Sostenedora</h2></>
-            <div class="contenido">
-            
+
+
+        
+
+</div>
+<div id="institucion" class="texto">
+<div  class="titulo"><h2>Institución Sostenedora</h2></div>
+
+<div class="contenido">
+
+    <div class="container">
+    <div class="row">
+        <p><b>La Fundación Educacional Vygotsky</b>, es una institución sin fines de <b>LUCRO</b>, se crea producto de la ley de Inclusión escolar N°20.845, viene a dar continuidad al Colegio Vygotsky, fundado un 24 de agosto del año 2000. RUT: 65.152.363-K.<p>
+        <div class="text-center thumbnail" id="directorio-info">
+        <img src="images/directorio.jpg"  class="img-thumbnail rounded mx-auto d-block" width="500px" alt="Responsive image">
+        <div class="caption">
+            <h5>Directorio</h5>
+            <p>PRESIDENTE Y FUNDADOR: Luis Rodrigo Pérez, VICE-PRESIDENTE Y FUNDADORA: Araceli Karen Rojas Lillo, TESORERA: Alicia del Rosario Mori Oyarce, Secretaria: Karen Consuelo Aguilar Navarrete.</p>
+        </div>
+
+        <p>La Fundación es una institución continuadora de :</p>
+        <p>La Sociedad Educacional Centro Educacional Vygotsky Limitada,RUT: 77.317.910-7, email CONTACTO@VYGOTSKY.cl ,  FONO 75-2322216, Casilla 901<p>
+        <p>Representada por:</p>
+</div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="thumnail">
+                <img src="images/araceli.jpg" class="img-thumnail rounded mx-auto d-block" width="70%">
+                <div class="caption perfil">
+                    <br><br>
+                    <h4>Araceli Karen Rojas Lillo<h4><br>
+                    <p>Educadora de Párvulos, Licenciada en Educación, Post-Titulada en Sicopedagogía y Lenguaje, Magister en Gestión y Política Educacional, Email <a>AROJAS@VYGOTSKY.CL</a></p>
+                </div>
             </div>
         </div>
+        <div class="col-sm">
+        <div class="thumnail">
+                <img src="images/luis.jpg" class="img-thumnail rounded mx-auto d-block" width="80%">
+                <div class="caption perfil">
+                    <br><br><br>
+                    <h4>Luis Rodrigo Pérez Montero<h4>
+                    <br>
+                    <p>Profesor de Educación General Básica, Profesor de Educación Tecnológica, Licenciado en Educación, Especialidad en Matemática, Magister en Gestión y Política Educacional, Ingeniero en Gestión de Centros Educativos, Email <a>RPEREZ@VYGOTSKY.CL</a>.</p>
+                </div>
+            </div>        </div>
+            </div>
 </div>
 
+
+</div>  
+
+</div>
+
+
 <script type="text/javascript"> 
+
+
 $(document).ready(function(){
     $("#presentacion").hide();
+    $("#institucion").hide();
     $("#proyecto_e").click(function(){
         $("#presentacion").show();
+        $("#institucion").hide();
+    });
+    
+    $("#sostenedora_e").click(function(){
+        $("#institucion").show();
+        $("#presentacion").hide();
     });
 });
 </script>

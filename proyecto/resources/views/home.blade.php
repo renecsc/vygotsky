@@ -47,8 +47,8 @@
 
 @section('media')
 <div id="noticias">
-<h2><p>Noticias</p></h2>
-<div class="row">
+    <h2><p>Noticias</p></h2>
+    <div class="row">
     <div class="col-sm-4">    
         <div class="fb-page " data-href="https://www.facebook.com/Centro-Educacional-Vygotsky-113606376757391/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
             <blockquote cite="https://www.facebook.com/Centro-Educacional-Vygotsky-113606376757391/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Centro-Educacional-Vygotsky-113606376757391/">Centro Educacional Vygotsky</a>
@@ -56,7 +56,7 @@
         </div>
     </div>
     <div class="col-sm-6 ">
-    <div class="row">
+<div class="row">
         <div class="col-sm-6">
     <h2>Palabras de Nuestro Director </h2>
 </div>
@@ -65,7 +65,7 @@
             <img id="administrativo" src="/images/director.jpg" alt="Avatar" width="200px" height="200px">
 </div>
 </div>
-<div id="intro"/>
+<div id="intro" class="container" />
     <h5><b>¿Cómo conversamos en tiempos de Whatsapps y Selfies ?</b></h5>
     <div class="contenido">
 <p>
